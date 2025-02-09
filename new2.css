@@ -7,7 +7,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-position: center 10%; 
+  background-position: center 10%;
   position: relative;
 }
 
@@ -31,20 +31,20 @@ svg {
   transition: transform 1s ease;
 }
 
-/* Heart Styling - Placed in the center */
+/* Heart Styling - Reduced size to 25% and moved 2cm down */
 #heart {
   position: absolute;
-  top: 50%;
+  top: calc(50% + 2cm); /* Moves heart 2cm down */
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120px; /* Adjust size */
+  width: 30px; /* Reduced size to 25% */
   height: auto;
 }
 
-/* Text Box - Moved to Bottom */
+/* Text Box - Stays at Bottom */
 p {
   position: absolute;
-  bottom: 20px; /* Moves text box to bottom */
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
