@@ -1,0 +1,43 @@
+body {
+  background: url('c:/Users/Amit Jat/Desktop/New folder (7)/chocolate/2.jpg') no-repeat center top;
+  background-size: cover;
+  min-height: 75vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center 10%; 
+  }
+  
+  svg {
+    overflow: visible;
+  }
+  
+  #chocolate_box {
+    cursor: pointer;
+  }
+  
+  #top {
+    transition: transform 1s ease;
+  }
+  
+  #chocolate_box:hover #top {
+    transform: translate(40px, -25px) rotate(10deg);
+    transition: transform 1s ease;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    background: #ffd1dc; /* Light pink background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px; /* Adds space between the chocolate box and text */
+    width: 80%;
+    max-width: 600px;
+  }
+  
