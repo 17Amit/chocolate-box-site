@@ -36,8 +36,8 @@ svg {
   position: absolute;
   top: calc(50% + 2cm); /* Moves heart 2cm down */
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30px; /* Reduced size to 25% */
+  transform: translate(-70%, -30%);
+  width: 10px; /* Reduced size to 25% */
   height: auto;
 }
 
