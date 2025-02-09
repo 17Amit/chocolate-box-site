@@ -1,43 +1,60 @@
 body {
   background: url('2.jpg') no-repeat center top;
   background-size: cover;
-  min-height: 75vh;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-position: center 10%; 
-  }
-  
-  svg {
-    overflow: visible;
-  }
-  
-  #chocolate_box {
-    cursor: pointer;
-  }
-  
-  #top {
-    transition: transform 1s ease;
-  }
-  
-  #chocolate_box:hover #top {
-    transform: translate(40px, -25px) rotate(10deg);
-    transition: transform 1s ease;
-  }
-  
-  p {
-    font-size: 20px;
-    font-weight: bold;
-    color: #333;
-    background: #ffd1dc; /* Light pink background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-top: 20px; /* Adds space between the chocolate box and text */
-    width: 80%;
-    max-width: 600px;
-  }
-  
+  position: relative;
+}
+
+/* Ensure SVGs are displayed properly */
+svg {
+  overflow: visible;
+}
+
+/* Chocolate Box */
+#chocolate_box {
+  cursor: pointer;
+}
+
+/* Chocolate Box Hover Animation */
+#top {
+  transition: transform 1s ease;
+}
+
+#chocolate_box:hover #top {
+  transform: translate(40px, -25px) rotate(10deg);
+  transition: transform 1s ease;
+}
+
+/* Heart Styling - Placed in the center */
+#heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px; /* Adjust size */
+  height: auto;
+}
+
+/* Text Box - Moved to Bottom */
+p {
+  position: absolute;
+  bottom: 20px; /* Moves text box to bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  background: #ffd1dc; /* Light pink background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
